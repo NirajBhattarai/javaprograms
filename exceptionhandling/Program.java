@@ -50,7 +50,7 @@ public class Program {
      */
 
     try {
-      FileReader file = new FileReader("output.txt");
+      FileReader file = new FileReader("idpo /outputs.txt");
 
       // Creates a BufferedWriter
       BufferedReader output = new BufferedReader(file);
