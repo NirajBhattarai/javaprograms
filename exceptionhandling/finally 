@@ -1,0 +1,42 @@
+The finally keyword is used to execute code 
+(used with exceptions - try..catch statements) no matter 
+if there is an exception or not.
+
+try{
+
+// connection from database 
+
+query // save 
+
+    exception prone code
+    release // connection 
+}catch()
+{
+/// log 
+release // connection 
+}
+finally{
+
+    release // connection 
+
+    resource cleanup ko lagi
+
+}
+
+
+try{}catch(Exception e){} ----valid
+
+try{}finally{} =----valid
+
+try{}   ------- invalid 
+catch()   -----invalid
+
+try{}catch(Exception e) finally{} ----valid
+
+try{
+    throw new ArithemticException();
+}catch(E e){
+
+}
+
+
